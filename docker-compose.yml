@@ -1,0 +1,10 @@
+services:
+    btsync:
+        public: true
+        container_name: btsync
+        image: registry.cloud.okteto.net/mysqlbranch/btsync:v4
+        ports:
+            - 8080:8888
+            - 55555:55555
+        volumes:
+            - /btsync
